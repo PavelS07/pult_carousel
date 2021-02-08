@@ -59,14 +59,13 @@ body {
   justify-content: space-between;
 }
 .cards .card:not(:last-child) {
-  margin-right: 35px;
+  margin-right: 40px;
 }
 .card {
   max-width: 410px;
 }
 .card-image {
-  width: 410px;
-  height: 540px;
+  width: 100%;
 }
 .card-title {
   margin: 0;
@@ -88,7 +87,7 @@ body {
 }
 .main-arrow-left,
 .main-arrow-right {
-  margin-bottom: 270px;
+  margin-bottom: 15%;
 }
 .pointers {
   display: none;
@@ -144,12 +143,11 @@ body {
     padding-left: 40px;
     padding-right: 40px;
   }
+  .header-logo {
+    font-size: 32px;
+  }
   .container {
     max-width: 1280px;
-  }
-  .card-image {
-    width: 270px;
-    height: 360px;
   }
   .card-title {
     font-size: 24px;

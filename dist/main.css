@@ -1,0 +1,237 @@
+@font-face {
+  font-family: "FuturaPTDemi";
+  src: url("../fonts/FuturaPTDemi/FuturaPTDemi.eot");
+  src: url("../fonts/FuturaPTDemi/FuturaPTDemi.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaPTDemi/FuturaPTDemi.woff") format("woff"), url("../fonts/FuturaPTDemi/FuturaPTDemi.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+body {
+  font-family: 'FuturaPTDemi';
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1920px;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-bottom: 40px;
+}
+.header-logo {
+  margin-top: 0;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #A89365;
+}
+.header-view {
+  display: flex;
+  align-items: center;
+}
+.header-view p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #A89365;
+  cursor: pointer;
+}
+.header-view svg {
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1920px;
+  margin: auto;
+  padding: 0 10px;
+}
+.container svg {
+  cursor: pointer;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+.cards .card:not(:last-child) {
+  margin-right: 35px;
+}
+.card {
+  max-width: 410px;
+}
+.card-image {
+  width: 410px;
+  height: 540px;
+}
+.card-title {
+  margin: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 100%;
+  color: #A89365;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.card-description {
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #575757;
+}
+.main-arrow-left,
+.main-arrow-right {
+  margin-bottom: 270px;
+}
+.pointers {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.pointers .pointer:not(:last-child) {
+  margin-right: 20px;
+}
+.pointer {
+  width: 12px;
+  height: 12px;
+  background: #000;
+  border-radius: 50%;
+  background-color: #F2F2F2;
+}
+.pointer.active {
+  background-color: #A89365;
+}
+.mobile-menu {
+  display: none;
+}
+.footer {
+  margin-top: 40px;
+}
+.footer-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-buttons button {
+  width: 360px;
+  height: 60px;
+  border: 1px solid #A89365;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  cursor: pointer;
+}
+.button-not-fill {
+  margin-right: 40px;
+  background: transparent;
+  color: #A89365;
+}
+.button-fill {
+  background: #A89365;
+  color: #ffffff;
+}
+@media (max-width: 1280px) {
+  .header {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .container {
+    max-width: 1280px;
+  }
+  .card-image {
+    width: 270px;
+    height: 360px;
+  }
+  .card-title {
+    font-size: 24px;
+  }
+  .card-description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .container {
+    max-width: 600px;
+  }
+  .main-arrow-left,
+  .main-arrow-right {
+    display: none;
+  }
+  .cards .card:nth-last-child(1),
+  .cards .card:nth-last-child(2) {
+    display: none;
+  }
+  .cards .card:nth-last-child(3) {
+    margin: 0;
+  }
+  .pointers {
+    display: flex;
+  }
+  .footer {
+    margin-top: 20px;
+  }
+  .footer-buttons {
+    flex-wrap: wrap;
+  }
+  .footer-buttons button {
+    width: 560px;
+    height: 45px;
+  }
+  .button-not-fill {
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .header {
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-wrap: wrap;
+  }
+  .header-logo {
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 100%;
+  }
+  .header-view p {
+    margin: 0;
+  }
+  .container {
+    max-width: 320px;
+  }
+  .card {
+    max-width: 300px;
+  }
+  .card-image {
+    width: 300px;
+    height: 360px;
+  }
+  .cards .card:nth-last-child(3) {
+    display: none;
+  }
+  .cards .card:first-child {
+    margin: 0;
+  }
+  .mobile-menu {
+    display: flex;
+  }
+  .footer-buttons button {
+    width: 300px;
+    height: 45px;
+  }
+}
